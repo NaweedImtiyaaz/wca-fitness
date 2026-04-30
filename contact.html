@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact – IronBMI</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<nav>
+  <div class="logo">WCA<span>FITNESS</span></div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="bmi.html">BMI Tracker</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="login.html">Login</a>
+  </div>
+</nav>
+
+<div class="page-hero"><h1>CONTACT <span style="color:var(--red)">US</span></h1><p>Got a question, feedback or partnership enquiry? We'd love to hear from you.</p></div>
+
+<section class="section alt">
+  <div style="display:flex;gap:60px;flex-wrap:wrap;align-items:flex-start;">
+
+    <div style="flex:1;min-width:260px;" class="fade">
+      <h2 style="margin-bottom:8px;">GET IN <span>TOUCH</span></h2>
+      <div class="divider"></div>
+      <div class="info-card"><div class="ico">📍</div><div><h4>Address</h4><p>MYLAPORE, Chennai – 600 001, Tamil Nadu</p></div></div>
+      <div class="info-card"><div class="ico">📞</div><div><h4>Phone</h4><p>+91 98765432</p></div></div>
+      <div class="info-card"><div class="ico">✉️</div><div><h4>Email</h4><p>hello@WCAFITNESS.com</p></div></div>
+    </div>
+
+    <div class="form-box fade" style="flex:1;min-width:300px;">
+      <h2 style="margin-bottom:8px;">SEND A <span>MESSAGE</span></h2>
+      <div class="divider"></div>
+      <div><label>Your Name</label><input type="text" id="cname" placeholder="ENTER YOUR NAME"/></div>
+      <div><label>Email</label><input type="email" id="cemail" placeholder="ENTER YOUR EMAIL"/></div>
+      <div><label>Message</label><textarea id="cmsg" rows="5" placeholder="ENTER YOUR MESSAGE"></textarea></div>
+      <button class="btn" onclick="sendMsg()" style="width:100%;">SEND MESSAGE →</button>
+      <p id="fmsg"></p>
+    </div>
+
+  </div>
+</section>
+
+<footer><p>© 2026 <span>IronBMI</span> · Track. Transform. Triumph.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

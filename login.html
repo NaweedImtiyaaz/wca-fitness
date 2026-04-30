@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Login – WCA FITNESS</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .login-wrap {
+      min-height: 85vh; display: flex; align-items: center; justify-content: center;
+      position: relative; padding: 40px 20px;
+    }
+    .login-wrap img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.15; }
+    .login-box {
+      position: relative; z-index: 2;
+      background: #161616; border: 1px solid #2a2a2a;
+      border-top: 3px solid var(--gold); border-bottom: 3px solid var(--red);
+      padding: 52px 44px; width: 100%; max-width: 420px; text-align: center;
+    }
+    .login-box h2 { font-family: 'Oswald', sans-serif; font-size: 2.2rem; color: var(--gold); letter-spacing: 3px; margin-bottom: 6px; }
+    .login-box .sub { color: var(--muted); font-size: 0.88rem; margin-bottom: 32px; }
+    .login-box .form-box { text-align: left; max-width: 100%; }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="logo">WCA<span>FITNESS</span></div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="bmi.html">BMI Tracker</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="active">Login</a>
+  </div>
+</nav>
+
+<div class="login-wrap">
+  <img src="BG.jpg" alt="bg"/>
+  <div class="login-box fade">
+    <h2>IRON<span style="color:var(--red)">BMI</span></h2>
+    <p class="sub">Login to access your saved plans</p>
+    <div class="form-box">
+      <div><label>Email</label><input type="email" id="lemail" placeholder="you@email.com"/></div>
+      <div><label>Password</label><input type="password" id="lpass" placeholder="••••••••"/></div>
+      <button class="btn" onclick="doLogin()" style="width:100%;margin-top:6px;">LOGIN →</button>
+      <p id="fmsg" style="text-align:center;margin-top:14px;"></p>
+      <p style="text-align:center;margin-top:18px;font-size:0.82rem;color:#555;">
+        No account? <a href="contact.html" style="color:var(--gold);">Contact us to register</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer><p>© 2026 <span>IronBMI</span> · Track. Transform. Triumph.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
